@@ -4,6 +4,10 @@
 const { Client, Collection } = require("discord.js");
 const { readdirSync } = require("fs");
 const { join } = require("path");
+const axios = require("axios")
+const urls = ["https://crimson-pattern-gram.glitch.me"]
+            urls.forEach(url => (
+              axios.get(url).then(console.log("pong at " + Date.now())).catch(() +> ();
 
 let TOKEN, PREFIX;
 try {
